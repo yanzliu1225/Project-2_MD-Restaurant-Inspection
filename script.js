@@ -1,10 +1,9 @@
 
-import showCategories from 'template_category.js';
-import showStats from 'template_stats.js';
-import showTable from 'template_table.js';
-import showExternal from 'template_external.js';
-
-import loadData from 'load_data.js';
+import showCategories from './template_category.js';
+import showStats from './template_stats.js';
+import showTable from './template_table.js';
+import showExternal from './template_external.js';
+import loadData from './load_data.js';
 
 // ============================================
 // DISPLAY MANAGEMENT - PROVIDED
