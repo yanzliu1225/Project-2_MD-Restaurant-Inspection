@@ -44,21 +44,22 @@ function showTable(data) {
 
   return `
     <h2 class="view-title">INSPECTION LOG</h2>
-
-    <table class="data-table" style="width: 100%; border-collapse: collapse; border: 4px solid black;">
-      <thead>
-        <tr style="background: black; color: white;">
-          <th onclick="sortTable(0)" style="padding: 10px; cursor: pointer;">NAME</th>
-          <th onclick="sortTable(1)" style="padding: 10px; cursor: pointer;">CITY</th>
-          <th onclick="sortTable(2)" style="padding: 10px; cursor: pointer;">RESULT</th>
-          <th onclick="sortTable(3)" style="padding: 10px; cursor: pointer;">DATE</th>
-          <th onclick="sortTable(4)" style="padding: 10px; cursor: pointer;">STATUS</th>
-        </tr>
-      </thead>
-      <tbody>
-        ${rows}
-      </tbody>
-    </table>
+    <div class="table-wrapper">
+      <table class="data-table" style="width: 100%; border-collapse: collapse; border: 4px solid black;">
+        <thead>
+          <tr style="background: black; color: white;">
+            <th onclick="sortTable(0)" style="padding: 10px; cursor: pointer;">NAME</th>
+            <th onclick="sortTable(1)" style="padding: 10px; cursor: pointer;">CITY</th>
+            <th onclick="sortTable(2)" style="padding: 10px; cursor: pointer;">RESULT</th>
+            <th onclick="sortTable(3)" style="padding: 10px; cursor: pointer;">DATE</th>
+            <th onclick="sortTable(4)" style="padding: 10px; cursor: pointer;">STATUS</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${rows}
+        </tbody>
+      </table>
+    </div>
   `;
 }
 
