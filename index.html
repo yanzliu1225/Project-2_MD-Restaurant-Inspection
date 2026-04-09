@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Views - Framework Approach</title>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,900;1,900&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <body>
+    <div class="container">
+        <header>
+            <h1>MARYLAND RESTAURANT INSPECTOR</h1>
+            <p><strong>RAW DATA. REAL SAFETY.</strong> A comprehensive database of food service safety and compliance across Maryland. Browse by city to see recent inspection results, violation histories, and facility status.</p>
+        </header>
+
+        <nav class="view-selector">
+            <button class="view-button" id="btn-categories" data-view="categories">Category View</button>
+            <button class="view-button" id="btn-table" data-view="table">Table View</button>
+            <button class="view-button" id="btn-stats" data-view="stats">Stats View</button>
+            <button class="view-button" id="btn-external" data-view="stats">External Library View</button>
+        </nav>
+
+        <main class="display-container">
+            <div id="data-display">
+                <div class="loading">Loading restaurant data...</div>
+            </div>
+        </main>
+
+    </div>
+    <script type="module" src="./script.js" defer></script>
+</body>
+</html>x`
