@@ -36,7 +36,7 @@ function showTable(data) {
         <td style="font-size: 0.85rem;">${result || "N/A"}</td>
         <td style="font-family: monospace;">${p.inspection_date?.split("T")[0] || "N/A"}</td>
         <td style="background-color: ${isOk ? '#ccffcc' : '#ffcccc'}; font-weight: 900; color: black;">
-          ${isOk ? "✅ COMPLIANT" : "❗ NOT COMPLIANT"}
+          ${isOk ? "COMPLIANT" : "NOT COMPLIANT"}
         </td>
       </tr>
     `;
